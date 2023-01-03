@@ -10,7 +10,7 @@ const pool = new Pool (
 )
 
 function quer (){
-    pool.query("SELECT * FROM ocorrencias", (err,res)=>{
+    pool.query("SELECT * FROM ocorrencias WHERE isncrição = '454f55687asf'", (err,res)=>{
         // console.log(err,res)
         if (res){
             res.rows.forEach((E) => {console.log(E)
@@ -25,4 +25,4 @@ function quer (){
     })
 }
 
-export default quer
+quer ()
